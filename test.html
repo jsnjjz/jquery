@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box {
+			width: 200px;
+			height: 200px;
+			background: yellowgreen;
+		}
+	</style>
+	<script src="jquery-1.11.3.js"></script>
+	<script>
+//		$(function(){
+//			$(".box").click(function (){
+//				$(this).css({"background": "green"});
+//			})
+//		})
+		
+		$(function (){
+			
+//			$("li").get(1).css({"background":"red"})
+//			alert($('li').get().eq(1))
+			
+//			alert($("li").size());
+			
+			$('li').eq(-1).css({"background":"red"});
+			
+		})
+	</script>
+</head>
+<body>
+	<ul>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</body>
+</html>

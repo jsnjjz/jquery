@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div {
+			width: 100px;
+			height: 100px;
+			background: yellowgreen;
+		}
+	</style>
+	<script src="jquery-1.11.3.js"></script>
+	<script>
+		$(function (){
+//			$("#box").css('display',"none");
+//			$("#box").remove();
+			
+			$("#box").click(function (){
+				alert(1);
+			})
+//			var box = $("#box");
+//			$("#box").detach();
+			
+			var box = $("#box").detach();
+			$("body").append(box);
+			
+		})
+	</script>
+</head>
+<body>
+	<div id="box"></div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="jquery-2.1.4.js"></script>
+	<script>
+		$(function (){
+//			$("a").attr("href","https://www.baidu.com");
+			$("a").data("data-value","12345");
+			$("button").click(function (){
+				alert($("a").data("data-value"));
+			})
+		})
+	</script>
+</head>
+<body>
+	<a href="">百度</a>
+	<button>按钮</button>
+</body>
+</html>

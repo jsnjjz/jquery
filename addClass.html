@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#box {
+			width: 200px;
+			height: 200px;
+			background: yellowgreen;
+		}
+		.change {
+			background: hotpink !important;
+		}
+	</style>
+	<script src="jquery-2.1.4.js"></script>
+	<script>
+		$(function (){
+				$("#box").get(0).className = "change";
+			$("#box").click(function (){
+//				$("#box").addClass("change");
+//				$("#box").toggleClass("change");
+//				var change = $("#box").get(0).className = "change";
+				$("#box").get(0).className += " on";
+			})
+		})
+	</script>
+</head>
+<body>
+	<div id="box">
+		
+	</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div {
+			width: 200px;
+			height: 200px;
+			background: blue;
+		}
+	</style>
+	<script src="jquery-2.1.4.js"></script>
+	<script src="jquery.color.js"></script>
+	<script>
+		$(function (){
+			$("div").animate({"width":"400px","background-color":"green"},1000).animate({"height":"400px"},1000);
+			
+			$("button").click(function (){
+//				$("div").stop(true);
+				$("div").finish();
+			})
+		})
+	</script>
+</head>
+<body>
+	<button>按钮</button>
+	<div></div>
+</body>
+</html>

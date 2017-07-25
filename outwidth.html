@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		.box {
+			margin: 10px;
+			padding: 6px;
+/*
+			width: 200px;
+			height: 200px;
+*/
+			background: yellowgreen;
+		}
+	</style>
+	<script src="jquery-1.11.3.js"></script>
+	<script>
+		$(function (){
+			alert($(".box").outerWidth());
+		})
+	</script>
+</head>
+<body>
+	<div class="box"></div>
+</body>
+</html>
